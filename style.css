@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+}
+
+
+#top{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+    width: 100%;
+    height: 60px;
+    padding: 3% 20%;
+    z-index: 9999;
+    /* background-color: red; */
+}  
+
+
+#logo{
+    position: absolute;
+    left: 3%;
+    /* background-color: blue; */
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#top #links{
+    position: absolute;
+    right: 5%;
+}
+
+#top #links a{
+    text-decoration: none;
+    /* position: absolute; */
+    margin-left: 80px;
+    text-transform: uppercase;
+    color: white;
+}    
+#links #active{
+    border-bottom: 3px solid white;
+}    
+#links a:hover{
+    border-bottom: 3px solid white;
+    
+}    
+
+
+
+#main #left{
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#left .place{
+    width: 100%;
+}
+
+.place h4{
+    display: inline-block;
+    position: relative;
+}
+
+.place h4::after{
+    content: " ";
+    display: block;
+    border-bottom: 1px solid white;
+    width: 83%;
+    transform: translateX(18%);
+
+}
+
+#left .place:hover h4{
+    opacity: 1;
+    font-size: 50px;
+    white-space: nowrap;
+}
+#left .place:nth-child(3):hover h4{
+    opacity: 1;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+#left .place:nth-child(3):hover h6{
+    font-size: 20px;
+    opacity: 1;
+    margin-left: 97px;
+    white-space: nowrap;
+}
+#left .place:hover h6{
+    font-size: 20px;
+    opacity: 1;
+    margin-left: 97px;
+    white-space: nowrap;
+}
+
+.place h4{
+    opacity: .6;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.place h6{
+    font-weight: 600;
+    opacity: .4;
+    margin-left: 14.4%;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+#main #right{
+    width: 70%;
+    height: 100%;
+}
+
+#rbox{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0 , -50%);
+    text-align: right;
+
+}
+
+#rbox h3{
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 30px;
+    line-height: 1;
+}
+
+
+#rbox h1{
+    font-weight: 500;
+    font-size: 180px;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+#rbox #input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 3px solid white;
+}
+
+#rbox #input i{
+    font-size: 25px;
+}
+
+#rbox input{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#rbox input::placeholder{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#right small {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
